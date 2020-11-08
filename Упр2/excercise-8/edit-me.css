@@ -1,4 +1,6 @@
 #container1 {
+    width: 370px;
+    height:70px;
     padding: 5px;
     margin: 5px;
     border-width: 5px;
@@ -9,11 +11,12 @@
 400px ширина и 100px виосчина. */
 
 #container2 {
+    height:80px;
     padding: 5px;
     border-width: 5px;
     border-style: solid;
     border-color: #0e5252;
-
+    overflow-wrap: initial;
 }
 /* - Да има padding 5px от всички страни.
 - Да има border със следните стойности:
