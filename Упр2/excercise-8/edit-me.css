@@ -1,0 +1,26 @@
+#container1 {
+    padding: 5px;
+    margin: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #5b4000;
+}
+/* - Крайните размери на box-model-a трябва да бъдат 
+400px ширина и 100px виосчина. */
+
+#container2 {
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0e5252;
+
+}
+/* - Да има padding 5px от всички страни.
+- Да има border със следните стойности:
+    - дебелина: 5px
+    - плътност: solid
+    - цвят: #0e5252
+- Крайните размери на box-model-a трябва да бъдат 
+400px ширина и 100px виосчина.
+- **Внимание!** този контейнер има предварително зададена 
+ширина от 100%. Property-то width да не се предефинира. */
