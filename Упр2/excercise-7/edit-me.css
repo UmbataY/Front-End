@@ -35,4 +35,7 @@ p::first-line {
 .uppercase {
   text-transform: uppercase;
 }
+div {
+  text-align: justify;
+}
   
