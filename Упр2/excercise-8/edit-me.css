@@ -11,12 +11,12 @@
 400px ширина и 100px виосчина. */
 
 #container2 {
+    max-width: 380px;
     height:80px;
     padding: 5px;
     border-width: 5px;
     border-style: solid;
     border-color: #0e5252;
-    overflow-wrap: initial;
 }
 /* - Да има padding 5px от всички страни.
 - Да има border със следните стойности:
