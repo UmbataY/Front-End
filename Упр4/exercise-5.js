@@ -15,9 +15,6 @@
 var headertitleElements = document.getElementsByClassName("headertitle");
 
 function func1(sColor1, sColor2) {
-    // console.log(pElements.length);
-    // console.log(headertitleElements.length);
-
     titleElements[0].innerHTML = pElements.length + " параграфа, " + headertitleElements.length + " елемента с клас <headertitle>"
 
     for (var i = 0; i < pElements.length; i++) {

@@ -1,4 +1,4 @@
- 9+// Условие:
+// Условие:
 // Напишете три класа, които отговарят на следната UML диаграма: 
 //     1.	PaymentMethod – клас, който трябва да има само един метод, който return-ва string: "Your amount in the account is: "
 //     2.	CashMethod – наследява PaymentMethod и има:
@@ -33,31 +33,45 @@ class PaymentMethod {
 
 class CashMethod extends PaymentMethod {
     constructor() {
-        var amount;
-        this.addToAmount = function (newAmount) {
-            amount += newAmount;
-        };
-        this.addToAmount = function (newAmount) {
-            amount -= newAmount;
-        };
-        this.getAmount = function () {
-            return this.super.getAmount() + amount; 
-        };
+        super();
+
+        var amount = 0;
+        this.setAmount = function(newAmount) { amount = newAmount; }
+        this.getAmount = function() { return amount; }
+
+    }
+    addToAmount(newAmount){
+        this.setAmount(this.getAmount() + newAmount);
+        return this;
+    };
+    reduceFromAmount(newAmount) {
+        this.setAmount(this.getAmount() - newAmount);
+        return this;
+    };
+    getAmount() {
+        return super.getAmount() + amount; 
     }
 }
 
 class CreditMethod extends PaymentMethod {
     constructor() {
-        var amount;
-        this.addToAmount = function (newAmount) {
-            amount += (newAmount * 90) / 100;
-        };
-        this.addToAmount = function (newAmount) {
-            amount -= newAmount;
-        };
-        this.getAmount = function () {
-            return this.super.getAmount() + amount; 
-        };
+        super();
+        
+        var amount = 0;
+        this.setAmount = function(newAmount) { amount = newAmount; }
+        this.getAmount = function() { return amount; }
+    }
+
+    addToAmount(newAmount){
+        this.setAmount(this.getAmount() + newAmount);
+        return this;
+    };
+    reduceFromAmount(newAmount) {
+        this.setAmount(this.getAmount() - newAmount);
+        return this;
+    };
+    getAmount() {
+        return super.getAmount() + amount; 
     }
 }
 
