@@ -1,7 +1,3 @@
-// Условие: 
-// С помощта на closure и клас, направете задача 1, така че _sallary да е наистина
-// private.
-
 class Person {
     constructor() {
       var _salary = 1000;
