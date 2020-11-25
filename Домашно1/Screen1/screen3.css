@@ -72,7 +72,16 @@ body>div {
     width: 100%;
 
     border-radius: 0px;
+
+    /* padding-left: 50%; */
+    /* padding-right: 2.5%; */
     margin-bottom: 2%;
+}
+.nav-bar>h1{
+    padding-left: 2%;
+}
+.nav-bar>div {
+    padding-right: 2%;
 }
 .nav-bar-input{
     background-image: url('search.png');
