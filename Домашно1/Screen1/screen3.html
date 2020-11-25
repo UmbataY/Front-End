@@ -7,96 +7,103 @@
         <link rel="stylesheet" href="message-view.css"/>
     </head>
     <body>
-        <div class="profile-view">
-            <div class="img-div">
-                <img src="img_avatar.png"/>
-                <h1>Martin Hristov</h1>
-            </div>
-            <div class="info">
-                <div>
+        <div class="nav-bar">
+            <h1>Flutter</h1>
+            <input class = "nav-bar-input" type="text" placeholder="Say something">
+        </div>
+        <div class = "body-content">
+            <div class="profile-view">
+                <div class="img-div">
+                    <img src="img_avatar.png"/>
+                    <h1>Martin Hristov</h1>
+                </div>
+                <div class="info">
                     <div>
-                        <p>Posts</p>
-                        <p>1</p>
+                        <div>
+                            <p>Posts</p>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>Reactions</p>
+                            <p>7</p>              
+                        </div>
                     </div>
-                    <div>
-                        <p>Reactions</p>
-                        <p>7</p>              
+                    <button>Log out</button>
+                </div>
+            </div>
+            <div class="message-view">
+                <div class = "message-input">
+                    <div class = "image">
+                        <img class="message-view-img" src="img_avatar.png"/>
+                        <!-- <h1>Martin Hristov</h1> -->
+                    </div>
+                    <input type="text" placeholder="Say something">
+                </div>
+                <div class = "message">
+                    <div class = "image">
+                        <img class="message-view-img" src="img_avatar.png"/>
+                        <!-- <h1>Martin Hristov</h1> -->
+                    </div>
+                    <div class = "content">
+                        <div class = "options">
+                            <div class = "info-message">
+                                <div>Ivan Ivanov</div>
+                                <div>0 seconds ago</div>
+                            </div>
+                            <div class = "close">
+                                <button><img src="close.png"/></button>
+                            </div>
+                        </div>
+                        <div class = "text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis vestibulum molestie. Curabitur sed lectus at ex eleifend pulvinar. 
+                            Curabitur eu hendrerit sapien, ac dignissim metus. Suspendisse potenti. Maecenas iaculis sit amet libero vel convallis. Nunc dignissim interdum ante, 
+                            volutpat aliquet mi dictum fringilla. Sed at augue vulputate, feugiat nunc id, gravida orci. Aliquam congue magna sit amet ipsum mattis lobortis. 
+                            Fusce tempor laoreet elementum.
+                        </div>
+                        <div class = "votes">
+                            <div class="upvotes">
+                                <img class="vote-img" src="upvote.png">
+                                2
+                            </div>
+                            <div class="downvotes">
+                                <img class="vote-img" src="downvote.png">
+                                3
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button>Log out</button>
+                <div class = "message">
+                    <div class = "image">
+                        <img class="message-view-img" src="img_avatar.png"/>
+                        <!-- <h1>Martin Hristov</h1> -->
+                    </div>
+                    <div class = "content">
+                        <div class = "options">
+                            <div class = "info-message">
+                                <div>Ivan Ivanov</div>
+                                <div>Last month</div>
+                            </div>
+                            <div class = "close">
+                                <button><img src="close.png"/></button>
+                            </div>
+                        </div>
+                        <div class = "text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis vestibulum molestie. Curabitur sed lectus at ex eleifend pulvinar.
+                        </div>
+                        <div class = "votes">
+                            <div class="upvotes">
+                                <img class="vote-img" src="upvote.png">
+                                10
+                            </div>
+                            <div class="downvotes">
+                                <img class="vote-img" src="downvote.png">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="message-view">
-            <div class = "message-input">
-                <div class = "image">
-                    <img class="message-view-img" src="img_avatar.png"/>
-                    <!-- <h1>Martin Hristov</h1> -->
-                </div>
-                <input type="text" placeholder="Say something">
-            </div>
-            <div class = "message">
-                <div class = "image">
-                    <img class="message-view-img" src="img_avatar.png"/>
-                    <!-- <h1>Martin Hristov</h1> -->
-                </div>
-                <div class = "content">
-                    <div class = "options">
-                        <div class = "info-message">
-                            <div>Ivan Ivanov</div>
-                            <div>0 seconds ago</div>
-                        </div>
-                        <div class = "close">
-                            <button><img src="close.png"/></button>
-                        </div>
-                    </div>
-                    <div class = "text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis vestibulum molestie. Curabitur sed lectus at ex eleifend pulvinar. 
-                        Curabitur eu hendrerit sapien, ac dignissim metus. Suspendisse potenti. Maecenas iaculis sit amet libero vel convallis. Nunc dignissim interdum ante, 
-                        volutpat aliquet mi dictum fringilla. Sed at augue vulputate, feugiat nunc id, gravida orci. Aliquam congue magna sit amet ipsum mattis lobortis. 
-                        Fusce tempor laoreet elementum.
-                    </div>
-                    <div class = "votes">
-                        <div class="upvotes">
-                            <img class="vote-img" src="upvote.png">
-                            2
-                        </div>
-                        <div class="downvotes">
-                            <img class="vote-img" src="downvote.png">
-                            3
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "message">
-                <div class = "image">
-                    <img class="message-view-img" src="img_avatar.png"/>
-                    <!-- <h1>Martin Hristov</h1> -->
-                </div>
-                <div class = "content">
-                    <div class = "options">
-                        <div class = "info-message">
-                            <div>Ivan Ivanov</div>
-                            <div>Last month</div>
-                        </div>
-                        <div class = "close">
-                            <button><img src="close.png"/></button>
-                        </div>
-                    </div>
-                    <div class = "text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis vestibulum molestie. Curabitur sed lectus at ex eleifend pulvinar.
-                    </div>
-                    <div class = "votes">
-                        <div class="upvotes">
-                            <img class="vote-img" src="upvote.png">
-                            10
-                        </div>
-                        <div class="downvotes">
-                            <img class="vote-img" src="downvote.png">
-                            0
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </body>
 </html>
