@@ -1,0 +1,161 @@
+.message-input>.image>img{
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+input {
+    width: 100%;
+
+    border-color: #EFF1FD;
+    border-width: thin;
+    border-radius: 20px;
+    border-style: none;
+
+    /* background-image: url('C:/Users/Yumit/IdeaProjects/Front-End-Web/Домашно1/Screen1/close.png'); */
+    background-image: url('bubble.png');
+
+    background-position: 98%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+/* ::-webkit-input-placeholder {
+    color:#C3E8F1;
+}
+
+::-moz-placeholder {
+    color:#C3E8F1;
+}
+
+::-ms-placeholder {
+    color:#C3E8F1;
+} */ 
+
+::placeholder {
+    color:#6CC8DD;
+
+    font-size: 18px;
+
+    padding-left: 2%;
+}
+
+
+
+.options{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.info-message {
+    padding: 1%;
+    padding-left: 0%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.info-message>div:nth-child(1) {
+    font-weight: bold;
+    font-size: 20;
+    white-space: nowrap;
+}
+.info-message>div:nth-child(2) {
+    color: #9798A3;
+
+    padding-left: 5%;
+    white-space: nowrap;
+}
+.info-message>div:nth-child(2):before {
+    color: #9798A3;
+
+    content:"• ";
+}
+.close>button {
+    all: unset;
+}
+.close>button>img {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+
+.message {
+    display: flex;
+
+    border-top-color:#E9E9E9;
+    border-top-width: thin;
+    border-top-style: solid;
+
+    padding: 2%;
+
+    min-height: 7rem;
+    font-size: 0.875rem;
+}
+.message-input {
+    padding: 1% 2% 1% 2%;
+    height: 3rem;
+    background-color: #F4FCFD;
+
+    display: flex;
+    justify-content: flex-start;
+}
+.image {
+    /* width: 7%; */
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    margin-right: 3%;
+}
+.message-view-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.message-view {
+    max-width: 55rem;
+    margin-left: 8px;
+}
+@media (max-width:890px){
+    .message-view {
+        /* max-width: 55rem; */
+        max-width: none;
+        width: 90%;
+        margin-left: 0px;
+    }
+}
+
+.content {
+    width: 93%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.votes {
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+    margin-top: 2%;
+}
+.upvotes{
+    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    /* line-height: normal; */
+}
+.downvotes{
+    display: flex;
+    align-items: center;
+}
+.vote-img{
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+    border-radius: 0%;
+}

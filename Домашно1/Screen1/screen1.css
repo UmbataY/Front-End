@@ -4,7 +4,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     font-size: 16px;
 
@@ -23,7 +23,7 @@ form div {
     width: 100%;
 }
 h2 {
-    color: grey;
+    color: #848694;
     margin-bottom: 15%;
 }
 .inner-div {
