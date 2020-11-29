@@ -47,15 +47,15 @@ function isValidUsername(username) {
     return false;
 }
 function isValidEmail(email) {
-    if (email.length < 5) {
-        console.log("EMAIL: too short");
-    }
-    if (!email.includes("@")) {
-        console.log("EMAIL: no @");
-    }
-    if (!email.substring(email.indexOf("@"), email.length).includes("@")) {
-        console.log("EMAIL: no dot");
-    }
+    // if (email.length < 5) {
+    //     console.log("EMAIL: too short");
+    // }
+    // if (!email.includes("@")) {
+    //     console.log("EMAIL: no @");
+    // }
+    // if (!email.substring(email.indexOf("@"), email.length).includes("@")) {
+    //     console.log("EMAIL: no dot");
+    // }
     
 
 
@@ -70,18 +70,18 @@ function isValidEmail(email) {
     return false;
 }
 function isValidPassword(password) {
-    if (password.length < 6) {
-        console.log("too short");
-    }
-    if (password == password.toLowerCase()) {
-        console.log("no Upper");
-    }
-    if (!/\d/.test(password)) {
-        console.log("no number");
-    }
-    if(!password.match(/[^A-Za-z0-9]+/)) {
-        console.log("no Special");
-    }
+    // if (password.length < 6) {
+    //     console.log("too short");
+    // }
+    // if (password == password.toLowerCase()) {
+    //     console.log("no Upper");
+    // }
+    // if (!/\d/.test(password)) {
+    //     console.log("no number");
+    // }
+    // if(!password.match(/[^A-Za-z0-9]+/)) {
+    //     console.log("no Special");
+    // }
 
 
     if (
