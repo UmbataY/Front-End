@@ -104,15 +104,15 @@
 		//like
 		newElem.children[1].children[2].children[0].children[0].addEventListener('click',event => {
 						window.tweet.incrementLikes(event.target.getAttribute("data-id"));
-						console.log(event.target.getAttribute("data-id"));
+						// console.log(event.target.getAttribute("data-id"));/
 
 
 
-						firebase.database().ref('posts/' + event.target.getAttribute("data-id")).once('value').then(userSnapshot => {
-							console.log(userSnapshot);
+						// firebase.database().ref('posts/' + event.target.getAttribute("data-id")).once('value').then(userSnapshot => {
+							// console.log(userSnapshot);
 							// const likes = parseInt(userSnapshot.val()['likes']);
 							// console.log(likes); 
-						});
+						// });
 		
 						// event.target.parentNode.children[1].innerHTML =
 						// 	parseInt(event.target.parentNode.children[1].innerHTML) + 1;
@@ -121,7 +121,7 @@
 		//dislike
 		newElem.children[1].children[2].children[1].children[0].addEventListener('click',event => {
 			window.tweet.incrementDislikes(event.target.getAttribute("data-id"));
-			console.log(event.target.getAttribute("data-id"));
+			// console.log(event.target.getAttribute("data-id"));
 			// event.target.parentNode.children[1].innerHTML =
 			// 	parseInt(event.target.parentNode.children[1].innerHTML) + 1;
 		});
@@ -133,7 +133,7 @@
 			
 			// event.target.parentNode.children[1].innerHTML =
 			// parseInt(event.target.parentNode.children[1].innerHTML) + 1;
-			console.log(event.target.parentNode.parentNode.children[1].children[0].children[0].innerHTML);
+			// console.log(event.target.parentNode.parentNode.children[1].children[0].children[0].innerHTML);
 			if (firebase.auth().currentUser.displayName == event.target.parentNode.parentNode.children[1].children[0].children[0].innerHTML) {
 				window.tweet.delete(event.target.getAttribute("data-id"));
 				firebase.database().ref('users/' + firebase.auth().currentUser.uid).once('value').then(userSnapshot => {
@@ -169,6 +169,8 @@
 				// console.log(likes);
 				userLikesElem.innerHTML = likes;
 			});
+
+
 		// console.log(data.val());
 		// Like / Dislike logic here
 	});
